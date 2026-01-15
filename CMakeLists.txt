@@ -15,14 +15,14 @@ target_include_directories(common INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 # 2. Явно добавляем исполняемые файлы
 # Здесь ты контролируешь, какие main собираем
-add_executable(app1 src/main1.cpp)
+add_executable(app1 src/1.cpp)
 target_link_libraries(app1 PRIVATE core)
 
-add_executable(app2 src/main2.cpp)
+add_executable(app2 src/2.cpp)
 target_link_libraries(app2 PRIVATE core)
 
 
-add_executable(app3 src/main3.cpp)
+add_executable(app3 src/3.cpp)
 target_link_libraries(app3 PRIVATE core)
 
 # Чтобы не собирать main_test.cpp, просто не создаём для него add_executable
