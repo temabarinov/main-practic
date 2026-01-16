@@ -11,18 +11,21 @@ add_library(core
 target_include_directories(core PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/utils)
 
 add_library(common INTERFACE)
-target_include_directories(common INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/src)
+target_include_directories(common INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/src/)
 
 # 2. Явно добавляем исполняемые файлы
 # Здесь ты контролируешь, какие main собираем
-add_executable(app1 src/1.cpp)
-target_link_libraries(app1 PRIVATE core)
+add_executable(11 src/enum_and_structs/11.cpp)
+target_link_libraries(11 PRIVATE common)
 
-add_executable(app2 src/2.cpp)
-target_link_libraries(app2 PRIVATE core)
+add_executable(12 src/enum_and_structs/12.cpp)
+target_link_libraries(12 PRIVATE common)
 
 
-add_executable(app3 src/3.cpp)
-target_link_libraries(app3 PRIVATE core)
+add_executable(13 src/enum_and_structs/13.cpp)
+target_link_libraries(13 PRIVATE common)
+
+add_executable(21 src/class_and_objects/21.cpp)
+target_link_libraries(21 PRIVATE common)
 
 # Чтобы не собирать main_test.cpp, просто не создаём для него add_executable
