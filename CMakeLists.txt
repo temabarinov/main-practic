@@ -28,4 +28,8 @@ target_link_libraries(13 PRIVATE common)
 add_executable(21 src/class_and_objects/21.cpp)
 target_link_libraries(21 PRIVATE common)
 
+
+add_executable(22 src/class_and_objects/22.cpp)
+target_link_libraries(22 PRIVATE common)
+
 # Чтобы не собирать main_test.cpp, просто не создаём для него add_executable
