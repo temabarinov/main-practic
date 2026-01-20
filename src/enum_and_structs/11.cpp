@@ -1,18 +1,18 @@
 #include "common.h"
 
 enum months{
-    Январь=1,
-    Февраль,
-    Март,
-    Апрель,
-    Май,
-    Июнь,
-    Июль,
-    Август,
-    Сентябрь,
-    Октябрь,
-    Ноябрь,
-    Декабрь
+    January=1,
+    February,
+    March,
+    April,
+    May,
+    June,
+    July,
+    August,
+    September,
+    October,
+    November,
+    December
 };
 
 
@@ -29,48 +29,48 @@ int main(){
         std::cin>>n;
         switch (n)
         {
-        case Январь:
-            std::cout<<"Январь"<<std::endl;;
+        case January:
+            std::cout<<"January"<<std::endl;;
             break;
-        case Февраль:
-            std::cout<<"Февраль"<<std::endl;;
+        case February:
+            std::cout<<"February"<<std::endl;;
             break;
-        case Март:
-            std::cout<<"Март"<<std::endl;;
+        case March:
+            std::cout<<"March"<<std::endl;;
             break;
-        case Апрель:
-            std::cout<<"Апрель"<<std::endl;;
+        case April:
+            std::cout<<"April"<<std::endl;;
             break;
-        case Май:
-            std::cout<<"Май"<<std::endl;;
+        case May:
+            std::cout<<"May"<<std::endl;;
             break;
-        case Июнь:
-            std::cout<<"Июнь"<<std::endl;;
+        case June:
+            std::cout<<"June"<<std::endl;;
             break;
-        case Июль:
-            std::cout<<"Июль"<<std::endl;;
+        case July:
+            std::cout<<"July"<<std::endl;;
             break;
-        case Август:
-            std::cout<<"Август"<<std::endl;;
+        case August:
+            std::cout<<"August"<<std::endl;;
             break;
-        case Сентябрь:
-            std::cout<<"Сентябрь"<<std::endl;;
+        case September:
+            std::cout<<"September"<<std::endl;;
             break;
-        case Октябрь:
-            std::cout<<"Октябрь"<<std::endl;;
+        case October:
+            std::cout<<"October"<<std::endl;;
             break;
-        case Ноябрь:
-            std::cout<<"Ноябрь"<<std::endl;;
+        case November:
+            std::cout<<"November"<<std::endl;;
             break;
-        case Декабрь:
-            std::cout<<"Декабрь"<<std::endl;;
+        case December:
+            std::cout<<"December"<<std::endl;;
             break;
         case 0:
-            std::cout<<"До свидания";
+            std::cout<<"Goodbay";
             break;
            
         default:
-            std::cout<<"Неправильный номер месяца"<<std::endl;
+            std::cout<<"Wrong month number"<<std::endl;
             break;
         }
 }

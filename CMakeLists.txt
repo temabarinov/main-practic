@@ -32,4 +32,9 @@ target_link_libraries(21 PRIVATE common)
 add_executable(22 src/class_and_objects/22.cpp)
 target_link_libraries(22 PRIVATE common)
 
+add_executable(31 src/OOP_abstraction_incapsulation/31.cpp)
+target_link_libraries(31 PRIVATE common)
+
+add_executable(32 src/OOP_abstraction_incapsulation/32.cpp)
+target_link_libraries(32 PRIVATE common)
 # Чтобы не собирать main_test.cpp, просто не создаём для него add_executable
