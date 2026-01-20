@@ -2,10 +2,12 @@
 
 
 class calculator{
-    public:
+    private:
     double num1;
     double num2;
-    calculator(double num1,double num2){};
+    public:
+    calculator(double num_1,double num_2):num1{num_1},num2{num_2}{};
+    
     double add(){
         return num1+num2;
 
@@ -47,7 +49,7 @@ int main(){
     std::cin>>num1;
     std::cout<<"Введите num2:"<<std::endl;
     std::cin>>num2;
-    calculator calculator={num1,num2};
+    calculator calculator(num1,num2);
     std::cout<<"num1 + num2 = "<<calculator.add()<<std::endl;
     std::cout<<"num1 - num2 = "<<calculator.subtract_2_1()<<std::endl;
     std::cout<<"num2 - num1 = "<<calculator.subtract_1_2()<<std::endl;

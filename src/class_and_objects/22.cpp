@@ -2,8 +2,12 @@
 
 
 class counter{
-    public:
+    private:
     int first_number;
+    public:
+    void setFirsrt_number(int First_number){
+        first_number=First_number;
+    }
     std::string operation{};
     void f(){
         if (operation=="+"){
@@ -31,7 +35,7 @@ int main(int argc,char** argv){
         std::cout<<"Введите начальное значение счетчика:"<<std::endl;
         std::cin>>first_number;
         
-        counter.first_number=first_number;
+        counter.setFirsrt_number(first_number);
 
         while(counter.operation!="x"){
             std::cout<<"Введите команду ('+', '-', '=' или 'x'):"<<std::endl;
@@ -46,7 +50,7 @@ int main(int argc,char** argv){
 
 
     }else{
-        counter.first_number=0;
+        counter.setFirsrt_number(1);
          while(counter.operation!="x"){
             std::cout<<"Введите команду ('+', '-', '=' или 'x'):"<<std::endl;
             std::cin>>counter.operation;
