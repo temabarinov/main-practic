@@ -1,5 +1,6 @@
 #include "common.h"
 
+
 class adress{
     private:
         std::string city{};
@@ -107,9 +108,11 @@ int main (int argc,char** argv){
             out_file<<adresses[n].getnum_apart()<<std::endl;
 
         }
+       
         delete[] adresses;
         in_file.close();
         out_file.close();
+
     
    
 
