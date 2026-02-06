@@ -13,6 +13,25 @@ target_include_directories(core PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/src/utils)
 add_library(common INTERFACE)
 target_include_directories(common INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/src/)
 
+add_library(mymath INTERFACE)
+target_include_directories(mymath INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/functions/)
+
+add_library(counter 
+        classes/counter.h
+        classes/counter.cpp)
+target_include_directories(counter PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/classes/)
+
+
+
+add_library(shapes
+        classes/triangles.cpp
+        classes/triangles.h
+        classes/quadrilaterals.h
+        classes/quadrilaterals.cpp
+        )
+target_include_directories(shapes PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/classes/)
+
+
 # 2. Явно добавляем исполняемые файлы
 # Здесь ты контролируешь, какие main собираем
 add_executable(11 src/enum_and_structs/11.cpp)
@@ -46,4 +65,27 @@ target_link_libraries(42 PRIVATE common)
 
 add_executable(43 src/OOP_inheritance_and_polymorphism/43.cpp)
 target_link_libraries(43 PRIVATE common)
+
+
+add_executable(51 
+        src/many_files_projects/51.cpp
+        functions/mymath.cpp
+                    )
+target_link_libraries(51 PRIVATE common)
+target_link_libraries(51 PRIVATE mymath)
+
+
+add_executable(52 
+        src/many_files_projects/52.cpp
+        )       
+target_link_libraries(52 PRIVATE common)
+target_link_libraries(52 PRIVATE counter) 
+
+
+add_executable(53
+        src/many_files_projects/53.cpp
+        )
+    target_link_libraries(53 PRIVATE common
+                                    shapes)
+
 # Чтобы не собирать main_test.cpp, просто не создаём для него add_executable

@@ -225,9 +225,7 @@ class parallelogram:public quadrilateral{
 int main(int argc,char** argv){
 
 
-    shape a;
-    a.draw();
-
+    std::cout<<"hi";
 
 
 
