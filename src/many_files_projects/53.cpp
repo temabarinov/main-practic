@@ -1,6 +1,6 @@
-#include"common.h"
+#include "common.h"
 #include "quadrilaterals.h"
-#include"triangles.h"
+#include "triangles.h"
 
 void drawsh(drawshape* a){
     a->draw();
