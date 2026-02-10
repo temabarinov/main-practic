@@ -121,7 +121,8 @@ class triangle_equal_all_sides : public triangle {
   triangle_equal_all_sides(int seta)
       : triangle(seta, seta, seta, 60, 60, 60, "Равносторонний треугольник") {}
   bool check() {
-    return ((geta()==getb()) && (getb()==getc()) && (getA()==getB()) && (getB()==getC()) && (getA()==60));
+    return ((geta() == getb()) && (getb() == getc()) && (getA() == getB()) &&
+            (getB() == getC()) && (getA() == 60));
   }
   void draw() {
     std::cout << getname() << ":" << std::endl;
