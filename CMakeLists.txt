@@ -82,10 +82,17 @@ target_link_libraries(52 PRIVATE common)
 target_link_libraries(52 PRIVATE counter) 
 
 
-add_executable(53
-        src/many_files_projects/53.cpp
-        )
+add_executable(53 src/many_files_projects/53.cpp)
     target_link_libraries(53 PRIVATE common
                                     shapes)
+
+
+
+add_executable(61 src/preprocessor_n_macros/61.cpp)
+target_link_libraries(61 PRIVATE common)
+
+
+add_executable(62 src/preprocessor_n_macros/62.cpp)
+target_link_libraries(62 PRIVATE common)
 
 # Чтобы не собирать main_test.cpp, просто не создаём для него add_executable

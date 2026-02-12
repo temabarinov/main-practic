@@ -8,7 +8,7 @@
             "name": "Debug",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/43",
+            "program": "${workspaceFolder}/build/62",
             "cwd": "${workspaceFolder}",
             "MIMode": "lldb"
         }
