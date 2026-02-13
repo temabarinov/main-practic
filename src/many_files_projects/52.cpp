@@ -25,6 +25,8 @@ int main(int argc, char** argv) {
         ccounter.decrement();
       } else if (operation == "=") {
         std::cout << ccounter.getCounter() << "\n";
+      } else {
+        continue;
       }
     }
     std::cout << "До свидания!" << std::endl;
@@ -41,6 +43,8 @@ int main(int argc, char** argv) {
         ccounter.decrement();
       } else if (operation == "=") {
         std::cout << ccounter.getCounter() << "\n";
+      } else {
+        continue;
       }
     }
     std::cout << "До свидания!" << std::endl;
