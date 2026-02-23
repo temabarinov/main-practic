@@ -95,4 +95,22 @@ target_link_libraries(61 PRIVATE common)
 add_executable(62 src/preprocessor_n_macros/62.cpp)
 target_link_libraries(62 PRIVATE common)
 
+
+
+add_executable(71 src/errors/71.cpp)
+target_link_libraries(71 PRIVATE common)
+
+
+add_executable(72 src/errors/72.cpp)
+target_link_libraries(72 PRIVATE common
+                                shapes)
+
+
+add_executable(81 src/operators/81.cpp)
+target_link_libraries(81 PRIVATE common
+                                )       
+
+add_executable(82 src/operators/82.cpp)
+target_link_libraries(82 PRIVATE common
+                                )     
 # Чтобы не собирать main_test.cpp, просто не создаём для него add_executable
