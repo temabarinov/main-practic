@@ -14,7 +14,8 @@ class Fraction {
   }
   double drob() const { return genNumerator() / getDenomerator(); }
   bool operator==(Fraction a) const {
-    if (this->drob() == a.drob()) {
+    if ((this->genNumerator() * a.getDenomerator()) ==
+        (a.genNumerator() * this->getDenomerator())) {
       return true;
     } else {
       return false;
@@ -22,7 +23,8 @@ class Fraction {
   }
   bool operator!=(Fraction a) const { return !(*this == a); }
   bool operator>(Fraction a) const {
-    if (this->drob() > a.drob()) {
+    if ((this->genNumerator() * a.getDenomerator()) >
+        (a.genNumerator() * this->getDenomerator())) {
       return true;
     } else {
       return false;
