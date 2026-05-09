@@ -113,4 +113,28 @@ target_link_libraries(81 PRIVATE common
 add_executable(82 src/operators/82.cpp)
 target_link_libraries(82 PRIVATE common
                                 )     
+add_executable(91 src/algoritms/91.cpp)
+target_link_libraries(91 PRIVATE common)
+
+add_executable(fibonacci src/algoritms/fibonacci.cpp)
+target_link_libraries(fibonacci PRIVATE common)
+
+add_executable(heap_print src/algoritms/heap_print.cpp)
+target_link_libraries(heap_print PRIVATE common)
+
+add_executable(heap_travel src/algoritms/heap_travel.cpp)
+target_link_libraries(heap_travel PRIVATE common)
+
+
+add_executable(tabs src/algoritms/alltabs/tabs.cpp)
+    
+target_link_libraries(tabs PRIVATE common)
+
+add_executable(tabs1 src/algoritms/alltabs/tabs1.cpp)
+    
+target_link_libraries(tabs1 PRIVATE common)
+
+add_executable(tabs2 src/algoritms/alltabs/tabs2.cpp)
+    
+target_link_libraries(tabs2 PRIVATE common)
 # Чтобы не собирать main_test.cpp, просто не создаём для него add_executable
