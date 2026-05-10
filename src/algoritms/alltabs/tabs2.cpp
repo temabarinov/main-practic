@@ -23,14 +23,14 @@ int main() {
   std::string s{};
   std::string f{};
   std::cout << "Введите строку, в которой будет осуществляться поиск:";
-  std::cin >> s;
+  std::getline(std::cin, s);
   while (f != "exit") {
     std::cout << "\nВведите подстроку, которую нужно найти:";
-    std::cin >> f;
+    std::getline(std::cin, f);
     if (find_substring_light_rabin_karp(s, f) == -1) {
       std::cout << "\nПодстрока " << f << " не найдена";
     } else {
-      std::cout << "Подстрока hello найдена по индексу: "
+      std::cout << "Подстрока " << f << " найдена по индексу: "
                 << find_substring_light_rabin_karp(s, f) << std::endl;
     }
   }
