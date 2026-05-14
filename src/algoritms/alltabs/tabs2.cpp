@@ -1,3 +1,4 @@
+
 #include "common.h"
 
 int find_substring_light_rabin_karp(const std::string s, const std::string f) {

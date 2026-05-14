@@ -125,6 +125,9 @@ target_link_libraries(heap_print PRIVATE common)
 add_executable(heap_travel src/algoritms/heap_travel.cpp)
 target_link_libraries(heap_travel PRIVATE common)
 
+add_executable(sort1 src/algoritms/sotrers/sort1.cpp)
+target_link_libraries(sort1 PRIVATE common)
+
 
 add_executable(tabs src/algoritms/alltabs/tabs.cpp)
     
